@@ -5,7 +5,7 @@
 // A binary tree node
 class Node {
 
-    Node(data) {
+    constructor(data) {
         this.data = data;
         this.left = this.right = null;
     }
@@ -41,11 +41,15 @@ left = new Node(2);
 right = new Node(3);
 left.left = new Node(4);
 left.right = new Node(5);
+a.left = left;
+a.right = right;
 
 left = new Node(3);
 right = new Node(2);
 right.left = new Node(5);
 right.right = new Node(4);
+b.left = left;
+b.right = right;
 
 if (areMirror(a, b) == true)
     console.log("Yes");
