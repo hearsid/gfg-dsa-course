@@ -4,8 +4,7 @@
 
 // function check whether a number
 // is prime or not
-function isPrime(n)
-{
+function isPrime(n) {
 	// Corner case
 	if (n <= 1)
 		return false;
@@ -20,6 +19,6 @@ function isPrime(n)
 
 // Driver Code
 
-	isPrime(11) ? console.log(" true" + "<br>") : console.log(" false" + "<br>");
+isPrime(11) ? console.log(" true" + "<br>") : console.log(" false" + "<br>");
 
 // This code is contributed by Mayank Tyagi
